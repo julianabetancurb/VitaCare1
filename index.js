@@ -30,6 +30,10 @@ document.getElementById('logout-btn').addEventListener('click', () => {
 document.getElementById('profile-btn').addEventListener('click', () => {
   window.location.href = 'profile.html'; 
 });
+//nuevo
+document.getElementById('appointments-btn').addEventListener('click', () => {
+  window.location.href = 'appointment.html';
+});
 
 function saveUser(email) {  
   const userRef = ref(db, 'usuarios/' + email.replace('.', '_'));

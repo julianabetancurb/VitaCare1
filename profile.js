@@ -39,7 +39,7 @@
 
       update(userRef, userData)
     .then(() => {
-      console.log('Perfil actualizado exitosamente.');
+      alert('Perfil actualizado exitosamente.');
       window.location.href = 'index.html'; 
     })
     .catch((error) => {
