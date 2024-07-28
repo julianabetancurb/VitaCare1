@@ -29,12 +29,12 @@ function saveAppointment(date, time, specialty) {
     const appointmentId = `Cita_con_${specialty.replace(/ /g, '_')}_en_fecha_${date}_a_las_${time.replace(':', '-')}`;
 
     const newAppointmentData = {
-      date: date,
-      time: time,
-      specialty: specialty,
+      fecha: date,
+      hora: time,
+      especialidad: specialty,
     };
   
-    const appointmentRef = ref(db, `usuarios/${sanitizedEmail}/appointments/${appointmentId}`);
+    const appointmentRef = ref(db, `usuarios/${sanitizedEmail}/citas/${appointmentId}`);
   
     set(appointmentRef, newAppointmentData)
       .then(() => {
