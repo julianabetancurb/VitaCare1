@@ -34,6 +34,10 @@ document.getElementById('profile-btn').addEventListener('click', () => {
 document.getElementById('appointments-btn').addEventListener('click', () => {
   window.location.href = 'appointment.html';
 });
+document.getElementById('view-appointments-btn').addEventListener('click', () => {
+  window.location.href = 'view.html';
+});
+
 
 function saveUser(email) {  
   const userRef = ref(db, 'usuarios/' + email.replace('.', '_'));
